@@ -9,6 +9,7 @@ import {
   Footer,
   RomanticoText,
   IndexConquistas,
+  BoxText,
 } from "../../styles/_styled";
 import { lifeCounter } from "../../utils/home";
 
@@ -45,13 +46,26 @@ export default function Conquistas({ initialVariables }: InitialVariablesProps) 
   return (
     
     <IndexConquistas>
+      <Head>
+          <title>Pessoa incrível</title>
+          <meta
+            name="description"
+            content="The time that I feel I'm in the right place."
+          />
+          <link rel="icon" href="/favicon.ico" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
       <RomanticoText>❤️ Conquistas para 2023 ❤️</RomanticoText>
       <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-            <input type="checkbox" id= "designillustration"/><span>Design & Illustration</span>
-            <input type="checkbox" id="digitalart"/><span>Digital Art</span>
-            <input type="checkbox" id="drawing"/><span>Drawing</span>
-            <input type="checkbox" id="paintingmixedmedia"/><span>Painting & Mixed Media</span>
-            <input type="checkbox" id="photography"/><span>Photography</span>
+            <BoxText><input type="checkbox"/><span>Cruzeiro</span></BoxText>
+            <BoxText><input type="checkbox"/><span>Gramado</span></BoxText>
+            <BoxText><input type="checkbox"/><span>Ambos empregados</span></BoxText>
+            <BoxText><input type="checkbox"/><span>Viagem de fim de ano</span></BoxText>
+            <BoxText><input type="checkbox"/><span>Tirar passaporte</span></BoxText>
       </div>  
     </IndexConquistas>
     

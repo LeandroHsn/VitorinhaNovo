@@ -66,6 +66,14 @@ const RomanticoText = styled.p`
   }
 `;
 
+const BoxText = styled.span`
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  transform: scale(3);
+  padding: 20px;
+  float: left; 
+`;
 const HourContainer = styled.p`
   font-size: 7rem;
   margin: 0;
@@ -106,4 +114,5 @@ export {
   LinkContainer,
   RomanticoText,
   IndexConquistas,
+  BoxText
 }; 

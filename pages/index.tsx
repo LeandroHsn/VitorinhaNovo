@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import { useEffect, useState } from "react";
 import {
   IndexContainer,
@@ -43,8 +44,20 @@ export default function Home({ initialVariables }: InitialVariablesProps) {
 
   return (
     <IndexContainer>
-      <IndexMain>
-
+      <Head>
+          <title>Pessoa incrível</title>
+          <meta
+            name="description"
+            content="The time that I feel I'm in the right place."
+          />
+          <link rel="icon" href="/favicon.ico" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
+      <IndexMain>        
         <LinkContainer>
         <Link href="/Conquistas">Conquistas</Link>
         </LinkContainer>        
